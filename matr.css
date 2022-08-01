@@ -197,7 +197,7 @@ p4{
     font-size: 20px;
     border: 2px solid lightgreen;
     color: #0f0;
-    text-decoration-color: #0f0;
+    text-decoration: none;
     box-shadow:
     0 0 5px #0F0,
     0 0 10px #0F0,
