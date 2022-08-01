@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     
+ }
+ html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    
+ }
+
+ .container{left:0;margin-bottom:0; background-color: black;
+    padding-top:0px;position:-webkit-sticky;
+    position:sticky;top:0;z-index:3}
+ .nav-bar {
+    background-color: #003B00;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    display:flexbox;
+    align-items: center;
+    /* 003B00  008F11           */
+    
+ }
+ 
+.logo, .p19, .p21{
+    font-size: 34px;
+  /*  font-weight: 500; */
+    color: snow;
+    text-shadow: 
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0,
+    0 0 35px #0F0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'sofia', cursive;
+    background: none;
+
+    
+}
+
+.logo p19{
+    font-size: 34px;
+    font-weight: 500;
+    color: snow;
+    text-decoration: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-left: 20px;
+}
+.nav-item {
+    margin-left: 3rem;
+}
+.nav-link {
+    font-size: 19px;
+    color: #0F0;
+}
+.nav-link:hover {
+    color: greenyellow;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #0f0;
+}
+
+@media only screen and (max-width: 668px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #003B00;
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: left;
+        transition: 0.3s;
+        z-index: 3;
+    }
+    .nav-link {
+        font-size: 30px;
+        color: #0F0;}
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+.mathome{
+    background: #0d0208;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.mathome canvas{
+    z-index: 1;
+    position: absolute;
+}
+#distext{
+    text-align: center;
+    display: block;
+    z-index: 2;
+    justify-content: center;
+    align-content: center;
+    font-family:"sofia", cursive;
+    
+}
+h1{
+    font-size: 40px;
+    font-family: "sofia", cursive;
+    color: snow;
+    text-shadow: 
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0,
+    0 0 35px #0F0;
+}
+h2{
+    font-size: 40px;
+    color: #0F0;
+    overflow: hidden;
+    
+    margin: 0, auto;
+    white-space: nowrap;
+
+}
+#distext :nth-child(5){
+    width: fit-content;
+    animation: typing 5s steps(30, end), blink-caret .5s step-end infinite;
+    white-space: nowrap;
+    border-right: 5px solid #0F0;
+    padding-right: 5px;
+}
+
+/*
+@keyframes typing { from{width: 0;} to{width: 100%;}
+}*/
+@keyframes blink-caret { from,to {border-color: transparent;} 50%{border-color: #0F0;}
+}
+p4{
+    font-size: 20px;
+    border: 2px solid lightgreen;
+    color: #0f0;
+    box-shadow:
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0;
+}
+p4:hover{
+    color: snow;
+    text-shadow: 
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0,
+    0 0 35px #0F0;
+}
+#about{
+    background-color: #0d0208;
+    border: 20px  solid #003B00;
+    border-style: double;
+    height: auto;
+    width: 100%;
+    color: #0F0;
+    text-align:center;
+    padding-top: 100px;
+    line-height: 300%;
+    padding-bottom: 200px;
+}
+h5{font-size: 40px; text-decoration: underline; } 
+h6{font-size: 20px; padding-left: 40px; padding-right: 40px;  font-style: italic;}
+p5{font-size: 30px; text-decoration: underline; padding-top: 50px; line-height: 50px;}
+p6{font-size: 20px;  font-style: italic;}
+
+#folio{
+    background-color: #0d0208;
+    border: 20px  solid #003B00;
+    border-style: double;
+    height: auto;
+    width: 100%;
+    color: #0F0;
+    text-align:center;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+#footer{
+    background-image: url(img/makewish.gif);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border: 20px  solid #003B00;
+    border-style: double;
+    color: #0F0;
+    text-align:center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: block;
+    padding-bottom: 200px;
+
+}
+#footer p19,#footer p21{
+    padding-top: 200px;
+    
+}
+.socials{
+    padding-top: 40px;
+    text-decoration-color: #0F0;
+}
+footer div a{color: #0f0; 
+    display:inline-block; 
+    margin-bottom:10px;text-decoration:underline;}
+    footer div a:hover{
+        color: snow;
+    text-shadow: 
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0,
+    0 0 35px #0F0;
+    
+    }
+    .tel{text-decoration:none}
+
+    .fa img {
+       height : 40px;
+        width: 40px;
+        
+    }
+    .fa:hover{
+        background-color: #0F0;
+    }
+    .fa img:hover{
+        box-shadow:
+    0 0 5px #0F0,
+    0 0 10px #0F0,
+    0 0 15px #0F0,
+    0 0 20px #0F0,
+    0 0 25px #0F0,
+    0 0 30px #0F0;
+    }
+    .connt, .socials{
+        padding-top: 30px;
+    }
+    .logo{
+         margin-left: 40%;
+         margin-right: 40%;
+    }
